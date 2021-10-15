@@ -1,0 +1,43 @@
+ava Program to Find Sum of Natural Numbers
+The natural numbers are the numbers that include all the positive integers from 1 to infinity. For example, 1, 2, 3, 4, 5, ......, n. When we add these numbers together, we get the sum of natural numbers.
+
+In this section, we will create the following programs:
+
+Java program to find the sum of the first 100 natural numbers
+Java program to find the sum of n natural numbers
+Java program to find the sum of n natural numbers using the function
+We can also find the sum of n natural number using the mathematical formula:
+##Java Program to Find Sum of Natural Numbers
+Sum of n natural numbers=n*(n+1)/2
+Suppose, we want to find the sum of the first 100 natural numbers. By putting the value in the above formula, we get:
+
+
+Java Program to Find Sum of Natural Numbers
+In this section, we are going to use the following ways to find the sum of natural numbers.
+
+Using Java for Loop
+Using Java while Loop
+Using Function
+Using Java for Loop
+Using Java for loop is the easiest way to find the sum of natural numbers.
+
+SumOfNaturalNumber1.java
+
+public class SumOfNaturalNumber1  
+{  
+public static void main(String[] args)   
+{  
+int i, num = 10, sum = 0;  
+//executes until the condition returns true  
+for(i = 1; i <= num; ++i)  
+{  
+//adding the value of i into sum variable  
+sum = sum + i;  
+}  
+//prints the sum   
+System.out.println("Sum of First 10 Natural Numbers is = " + sum);  
+}  
+}  
+Output:
+
+Sum of First 10 Natural Numbers is = 55
