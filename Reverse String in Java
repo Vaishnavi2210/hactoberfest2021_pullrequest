@@ -1,0 +1,92 @@
+##How to reserve a string in Java without using reverse function
+
+#There are following ways to reverse a string in Java:
+
+Using for loop
+Using While loop
+Using static method
+Using For loop
+
+Example to reverse string in Java by using for loop
+
+In the following example, we have used for loop to reverse a string. The for loop executes until the condition i>0 becomes false.
+
+import java.util.Scanner;  
+class ReverseStringExample1  
+{  
+public static void main(String args[])  
+{  
+String s;  
+Scanner sc=new Scanner(System.in);  
+System.out.print("Enter a String: ");  
+s=sc.nextLine();                    //reading string from user  
+System.out.print("After reverse string is: ");  
+for(int i=s.length();i>0;--i)                //i is the length of the string  
+{  
+System.out.print(s.charAt(i-1));            //printing the character at index i-1  
+}  
+}  
+}  
+Output:
+
+
+
+##Using while loop
+
+Example to reverse string in Java by using while loop
+
+In the following example, i is the length of the string. The while loop execute until the condition i>0 becomes false i.e. if the length of the string is 0 then cursor terminate the execution. It prints the characters of the string which is at index (i-1) until i>0.
+
+import java.util.Scanner;  
+class ReverseStringExample2  
+{  
+public static void main(String args[])  
+{  
+String s;  
+Scanner sc=new Scanner(System.in);                    //reading string from user  
+System.out.print("Enter a String: ");  
+s=sc.nextLine();  
+System.out.print("After reverse string is: ");  
+int i=s.length();                   //determining the length of the string   
+while(i>0)  
+{  
+System.out.print(s.charAt(i-1));                 //printing the character at index i-1  
+i--;                               //decreasing the length of the string  
+}  
+}  
+}  
+Output:
+
+
+
+
+##Using Static method
+
+Example to reverse string in Java by using static method
+
+In the following example, we have created an object of the class and called the static method with the object as rev.reverse(s) by passing the given string.
+
+import java.util.Scanner;  
+public class ReverseStringExample3  
+{  
+public static void main(String[] arg)  
+{  
+ReverseStringExample3 rev=new ReverseStringExample3();  
+Scanner sc=new Scanner(System.in);  
+System.out.print("Enter a string : ");  
+String  s=sc.nextLine();      
+System.out.println("Reverse String  is : "+rev.reverse(s)); //calling method  
+}  
+//calling method   
+static String reverse(String str)  
+{  
+String rev="";  
+for(int i=str.length();i>0;--i)  
+{  
+rev=rev+(str.charAt(i-1));   
+}  
+return rev;  
+}  
+}  
+Output:
+
